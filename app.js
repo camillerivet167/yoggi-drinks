@@ -2,8 +2,8 @@
 // CONFIG — remplace ces valeurs par les tiennes
 // depuis ton tableau de bord Supabase
 // =============================================
-const SUPABASE_URL = 'https://VOTRE_PROJECT_ID.supabase.co';
-const SUPABASE_ANON_KEY = 'VOTRE_ANON_KEY';
+const SUPABASE_URL = 'https://xzqyiabeuhxqxhakclyb.supabase.co';
+const SUPABASE_ANON_KEY = 'sb_publishable_jz7703ACwHzeBJ9iIOVFog_oTulGodK';
 
 // =============================================
 // SOUMISSION DU FORMULAIRE
@@ -37,7 +37,7 @@ async function submitForm() {
         'Content-Type': 'application/json',
         'apikey': SUPABASE_ANON_KEY,
         'Authorization': `Bearer ${SUPABASE_ANON_KEY}`,
-        'Prefer': 'return=minimal'
+        'Prefer': 'return=representation'
       },
       body: JSON.stringify({
         prenom,
