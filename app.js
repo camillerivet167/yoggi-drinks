@@ -1,13 +1,6 @@
-// =============================================
-// CONFIG — remplace ces valeurs par les tiennes
-// depuis ton tableau de bord Supabase
-// =============================================
 const SUPABASE_URL = 'https://xzqyiabeuhxqxhakclyb.supabase.co';
 const SUPABASE_ANON_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Inh6cXlpYWJldWh4cXhoYWtjbHliIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzYxNjg5MTQsImV4cCI6MjA5MTc0NDkxNH0.euURZWBXZaL0LY9Cf_YToCSjL1Imf3rLLgNaaPLv7H8';
 
-// =============================================
-// SOUMISSION DU FORMULAIRE
-// =============================================
 async function submitForm() {
   const prenom = document.getElementById('fp').value.trim();
   const nom = document.getElementById('fn').value.trim();
@@ -36,8 +29,7 @@ async function submitForm() {
       headers: {
         'Content-Type': 'application/json',
         'apikey': SUPABASE_ANON_KEY,
-        'Authorization': `Bearer ${SUPABASE_ANON_KEY}`,
-        'Prefer': 'return=representation'
+        'Authorization': `Bearer ${SUPABASE_ANON_KEY}`
       },
       body: JSON.stringify({
         prenom,
@@ -58,9 +50,9 @@ async function submitForm() {
     }
   } catch (err) {
     console.error(err);
-    errorDiv.textContent = 'Oups, une erreur s\'est produite. Réessaie dans un instant.';
+    errorDiv.textContent = "Oups, une erreur s'est produite. Réessaie dans un instant.";
     errorDiv.style.display = 'block';
     submitBtn.disabled = false;
-    submitBtn.textContent = 'C\'est bon, je m\'inscris !';
+    submitBtn.textContent = "C'est bon, je m'inscris !";
   }
-}force update app.js
+}
