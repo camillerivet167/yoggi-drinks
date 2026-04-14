@@ -22,7 +22,7 @@ body { font-family: 'Inter', sans-serif; background: #faf7f2; color: #1e3d1a; }
 .y-cta-ghost { background: transparent; color: #2d5a27; border: 1.5px solid #2d5a27; padding: 11px 22px; border-radius: 30px; font-size: 14px; font-weight: 500; cursor: pointer; font-family: 'Inter', sans-serif; transition: opacity .2s; }
 .y-cta-ghost:hover { opacity: .7; }
 .y-hero-right { display: flex; justify-content: center; align-items: center; }
-.y-hero-logo { width: 230px; height: 230px; object-fit: contain; mix-blend-mode: multiply; }
+.y-hero-logo { width: 340px; height: 340px; object-fit: contain; }
 
 /* VIBES */
 .y-vibes { display: flex; gap: 8px; padding: 1rem 2rem 1.5rem; background: #faf7f2; flex-wrap: wrap; }
