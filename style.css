@@ -2,24 +2,16 @@
 
 body { font-family: 'Inter', sans-serif; background: #faf7f2; color: #1e3d1a; }
 
-/* NAV — fond beige, logo beige fondu */
-.y-nav {
-  display: flex; justify-content: space-between; align-items: center;
-  padding: 1.2rem 2rem; background: #faf7f2;
-  border-bottom: 1px solid #e4ddd2; position: sticky; top: 0; z-index: 100;
-}
+/* NAV */
+.y-nav { display: flex; justify-content: space-between; align-items: center; padding: 1.2rem 2rem; background: #faf7f2; border-bottom: 1px solid #e4ddd2; position: sticky; top: 0; z-index: 100; }
 .y-nav-logo { display: flex; align-items: center; gap: 10px; }
 .y-nav-img { width: 36px; height: 36px; object-fit: contain; mix-blend-mode: multiply; }
 .y-nav-brand { font-family: 'Playfair Display', serif; font-size: 1.1rem; font-weight: 700; color: #1e4d2b; }
 .y-nav-loc { font-size: 12px; color: #5a7a5e; background: #d0e8c4; padding: 4px 12px; border-radius: 20px; }
 
-/* HERO — fond vert clair, logo vert fondu */
+/* HERO */
 .y-hero { background: #e8f0e0; overflow: hidden; }
-.y-hero-body {
-  display: grid; grid-template-columns: 1fr 1fr;
-  align-items: center; padding: 2rem 2rem 3rem;
-  gap: 1rem; max-width: 900px; margin: 0 auto;
-}
+.y-hero-body { display: grid; grid-template-columns: 1fr 1fr; align-items: center; padding: 2rem 2rem 3rem; gap: 1rem; max-width: 900px; margin: 0 auto; }
 .y-hero-tag { font-size: 11px; letter-spacing: 2px; text-transform: uppercase; color: #b5763a; margin-bottom: .8rem; }
 .y-hero-h1 { font-family: 'Playfair Display', serif; font-size: 2.8rem; font-weight: 700; line-height: 1.05; color: #1e3d1a; margin-bottom: .75rem; }
 .y-hero-h1 em { color: #b5763a; font-style: italic; }
@@ -39,19 +31,22 @@ body { font-family: 'Inter', sans-serif; background: #faf7f2; color: #1e3d1a; }
 .y-vibe-name { font-size: 13px; font-weight: 600; color: #1e3d1a; }
 .y-vibe-sub { font-size: 11px; color: #8a7a6a; }
 
-/* VIOLETTE */
-.y-violette { background: #fff; padding: 2.5rem 2rem; display: flex; flex-direction: column; align-items: center; text-align: center; }
-.y-v-bubble { background: #e8f0e0; border-radius: 20px; padding: 1.5rem 2rem; max-width: 520px; position: relative; }
+/* CITATIONS CÔTE À CÔTE */
+.y-quotes { background: #fff; padding: 2.5rem 2rem; }
+.y-quotes-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; max-width: 860px; margin: 0 auto; }
+.y-quote-item { display: flex; flex-direction: column; align-items: center; text-align: center; }
+.y-v-bubble { background: #e8f0e0; border-radius: 20px; padding: 1.5rem 1.75rem; position: relative; width: 100%; }
 .y-v-bubble::before { content: ''; position: absolute; bottom: -14px; left: 50%; transform: translateX(-50%); width: 0; height: 0; border-left: 14px solid transparent; border-right: 14px solid transparent; border-top: 14px solid #e8f0e0; }
-.y-v-quote { font-family: 'Playfair Display', serif; font-size: 1rem; color: #2d4a28; line-height: 1.65; font-style: italic; margin-bottom: .75rem; }
+.y-v-quote { font-family: 'Playfair Display', serif; font-size: .95rem; color: #2d4a28; line-height: 1.65; font-style: italic; margin-bottom: .75rem; }
 .y-v-quote em { color: #b5763a; font-style: normal; font-weight: 700; }
 .y-v-sig { font-size: 13px; color: #6a8f60; font-weight: 500; }
 .y-v-avatar { margin-top: 22px; display: flex; flex-direction: column; align-items: center; gap: 8px; }
 .y-v-circle { width: 56px; height: 56px; border-radius: 50%; background: #d0e8c4; border: 2px solid #2d5a27; overflow: hidden; display: flex; align-items: center; justify-content: center; }
+.y-v-circle--camille { font-size: 18px; font-weight: 700; color: #2d5a27; }
 .y-v-name { font-size: 14px; font-weight: 600; color: #1e3d1a; }
 .y-v-role { font-size: 12px; color: #8a7a6a; }
 
-/* TOUT CENTRÉ — classe partagée */
+/* TOUT CENTRÉ */
 .centered { text-align: center; }
 .centered .y-ws-row { justify-content: center; }
 .centered .y-slist { margin: 0 auto; }
@@ -129,6 +124,7 @@ body { font-family: 'Inter', sans-serif; background: #faf7f2; color: #1e3d1a; }
   .y-row { grid-template-columns: 1fr; }
   .y-vibes { flex-direction: column; }
   .y-vibe { min-width: unset; }
+  .y-quotes-grid { grid-template-columns: 1fr; }
   .y-ws-row { flex-wrap: nowrap; overflow-x: auto; justify-content: flex-start; }
   .y-payment-methods { flex-wrap: wrap; }
 }
