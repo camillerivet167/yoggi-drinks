@@ -63,4 +63,4 @@ async function submitForm() {
     submitBtn.disabled = false;
     submitBtn.textContent = 'C\'est bon, je m\'inscris !';
   }
-}
+}force update app.js
