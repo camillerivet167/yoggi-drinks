@@ -3,7 +3,7 @@
 // depuis ton tableau de bord Supabase
 // =============================================
 const SUPABASE_URL = 'https://xzqyiabeuhxqxhakclyb.supabase.co';
-const SUPABASE_ANON_KEY = 'sb_publishable_jz7703ACwHzeBJ9iIOVFog_oTulGodK';
+const SUPABASE_ANON_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Inh6cXlpYWJldWh4cXhoYWtjbHliIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzYxNjg5MTQsImV4cCI6MjA5MTc0NDkxNH0.euURZWBXZaL0LY9Cf_YToCSjL1Imf3rLLgNaaPLv7H8';
 
 // =============================================
 // SOUMISSION DU FORMULAIRE
